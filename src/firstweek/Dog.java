@@ -7,8 +7,8 @@ public class Dog extends Animal{
 
 	}
 
-	public Dog(int legCount) {
-		super();
+	public Dog(String name, String color,int legCount) {
+		super(name,color);
 		this.legCount = legCount;
 	}
 
@@ -24,7 +24,7 @@ public class Dog extends Animal{
 		super(name,color);
 	}
 	
-	public void snapper(String name,String color,int legCount) {
-		System.out.println(color + "的" + legCount + "条腿的" + name + "正在咬人！" );
+	public void snapper() {
+		System.out.println("新增的属性： " + legCount + "条腿的它正在咬人！" );
 	}
 }

@@ -1,12 +1,12 @@
-package firstweek;
+ package firstweek;
 
 public class Teacher extends Person{
 	private int salary;
 	
 	public Teacher() {
-		
+		super();
 	}
-	
+
 	public Teacher(String name, int age, String gender,int salary) {
 		super(name,age,gender);
 		this.salary = salary;
@@ -22,6 +22,6 @@ public class Teacher extends Person{
 
 	public void printSalary() {
 		eatFood();
-		System.out.println("薪资是： " + salary);
+		System.out.println(getName() + "的薪资是： " + salary);
 	}
 }

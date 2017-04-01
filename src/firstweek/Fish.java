@@ -6,7 +6,7 @@ public class Fish extends Animal {
 		super(name,color);
 	}
 
-	public void pop(String name, String color) {
-		System.out.println("颜色是： " + color + "的" + name + ": 的鱼正在吹泡泡！");
+	public void pop() {
+		System.out.println(getColor() + "它正在吹泡泡！");
 	}
 }

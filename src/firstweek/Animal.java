@@ -9,7 +9,6 @@ public class Animal {
 	}
 	
 	public Animal(String name, String color) {
-		super();
 		this.name = name;
 		this.color = color;
 	}
