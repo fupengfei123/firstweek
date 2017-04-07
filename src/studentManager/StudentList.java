@@ -1,15 +1,16 @@
 package studentManager;
 
-public class Student {
+public class StudentList {
+
 	private String name;
 	private int age;
 	private String gender;
 	
-	public Student() {
+	public StudentList() {
 		
 	}
 	
-	public Student(String name, int age, String gender) {
+	public StudentList(String name, int age, String gender) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -40,4 +41,5 @@ public class Student {
 		return "Student [name=" + name + ", age=" + age + ", gender=" + gender
 				+ "]";
 	}
+
 }

@@ -1,9 +1,12 @@
 package studentManager;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class StudentTest {
 	static Scanner scanner = new Scanner(System.in);
+	static List<Student> list = new ArrayList<Student>();
 
 	// 主方法调用
 	public static void main(String[] args) {
@@ -34,7 +37,7 @@ public class StudentTest {
 			System.out.println("学生姓名：  " + students[i].getName());
 			System.out.println("学生年龄：  " + students[i].getAge());
 			System.out.println("学生性别：  " + students[i].getGender());
-		}  
+		}
 	}
 
 	// 查询学生信息
@@ -47,7 +50,7 @@ public class StudentTest {
 			System.out.println("3.根据性别查找： ");
 			System.out.println("请输入0~3：  ");
 			int mark = scanner.nextInt();
-			if(mark == 0){
+			if (mark == 0) {
 				System.out.println("程序退出！");
 				break;
 			}
@@ -67,7 +70,7 @@ public class StudentTest {
 					System.out.println("查无此人！");
 				}
 				break;
-			case 2: //根据年龄查找
+			case 2: // 根据年龄查找
 				System.out.println("请输入学生年龄： ");
 				int num = scanner.nextInt();
 				boolean isSeachByAgeFound = false;
@@ -104,7 +107,7 @@ public class StudentTest {
 		}
 	}
 
-	//打印学生信息，私有的
+	// 打印学生信息，私有的
 	private static void printStudentInfos(Student student) {
 		System.out.println("-------------学生信息-------------");
 		System.out.println(student.getName());
