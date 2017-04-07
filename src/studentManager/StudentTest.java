@@ -41,12 +41,16 @@ public class StudentTest {
 	public static void selectStudentInfos(Student[] students) {
 		while (true) {
 			System.out.println("根据条件查询学生信息： ");
+			System.out.println("0.退出！");
 			System.out.println("1.根据姓名查找： ");
 			System.out.println("2.根据年龄查找： ");
 			System.out.println("3.根据性别查找： ");
-			System.out.println("请输入1~3：  ");
+			System.out.println("请输入0~3：  ");
 			int mark = scanner.nextInt();
-			
+			if(mark == 0){
+				System.out.println("程序退出！");
+				break;
+			}
 			switch (mark) {
 			case 1:// 根据姓名查找
 				System.out.println("请输入学生姓名： ");
@@ -94,13 +98,9 @@ public class StudentTest {
 				}
 				break;
 			default:
-				System.out.println("请输入1~3 ！");
+				System.out.println("请输入0~3 ！");
 				break;
 			}
-			System.out.println("是否退出？");
-			if (scanner.nextInt() == 0)
-				System.out.println("程序退出!");
-				break;
 		}
 	}
 

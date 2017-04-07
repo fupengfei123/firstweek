@@ -34,6 +34,4 @@ public class Student {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	
-	
 }

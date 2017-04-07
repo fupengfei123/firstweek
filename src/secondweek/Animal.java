@@ -1,29 +1,34 @@
-package secondmonth;
+package secondweek;
 
-public class Teacher extends Person{
+public abstract class Animal {
+	protected String name;
+	protected int age;
 
-	public String name;
-	public int age;
-	
-	public Teacher() {
+	public Animal() {
 		super();
 	}
-	public Teacher(String name, int age) {
+
+	public Animal(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getAge() {
 		return age;
 	}
+
 	public void setAge(int age) {
 		this.age = age;
 	}
 
+	public abstract void showInfo();
 }
